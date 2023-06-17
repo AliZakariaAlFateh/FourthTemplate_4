@@ -1,0 +1,885 @@
+/*  
+Theme Name : El Manar Company of computers
+Theme Coder : Ali Zakaria 
+PSD Designe :
+-----------------------------------------------
+FirstColor :#08526d
+SecondColor :#ec1c23
+*/
+
+body{
+
+}
+
+:root {
+    --FirstColorBlue: #08526d;
+    --SecondColorRed: #ec1c23;
+    
+}
+
+ 
+/* Start Upper Bar  */
+
+.upper-bar{
+    background-color: var(--FirstColorBlue);
+    color:#fff ;
+}
+.upper-bar .info{
+    margin:15px 0;
+}
+
+.leftDiv{
+text-align: left;
+}
+.rightDiv{
+    text-align: right;
+}
+.btn{
+    background-color: var(--FirstColorBlue);
+    border: solid var(--SecondColorRed) 1px;
+}
+.upper-bar .get-qout{
+    display: inline-block;
+    border: solid var(--SecondColorRed) 1px;
+    padding: 2px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media(max-width:576px) {
+    .upper-bar .info:first-child{
+        margin-bottom: 0;
+    }
+}
+/* End Upper Bar  */
+
+/* Start Main NavBar */
+.navbar-brand>span{
+    font-size:30px;
+}
+.navbar-brand span:first-child{
+    font-weight: bold;
+    color: var(--FirstColorBlue);
+}
+.navbar-brand span:last-child{
+    color: var(--SecondColorRed);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: var(--FirstColorBlue);
+    font-weight:bold;
+}
+
+/* .navbar-light .navbar-nav .active>.nav-link{
+    font-weight:bold;
+    color: var(--SecondColorRed);
+} */
+.navbar-nav .active>.nav-link{
+    
+    color: var(--SecondColorRed) !important; /* using important to make over write of his class */
+    
+}
+.navbar-nav .nav-item .underline-from-center{}
+
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+/* .navbar-nav .nav-item{
+    transition: border .7s ease-in-out;
+}
+.navbar-nav .nav-item:hover{
+    border-bottom: solid 2px var(--SecondColorRed);
+} */
+/* End Main NavBar */
+
+/* Start Div Slider */
+.slider{
+    background-color:#bb4646;
+    min-height: 300px;
+    /* height: 100vh; */
+}
+.slider .carousel .carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:768px) {
+    .slider .carousel .carousel-inner{
+        justify-content: center;
+    }
+    
+}
+.slider .carousel-inner h1{
+    position:absolute;
+    z-index: 3;
+    color:#fff;
+    font-size: 60px;
+    max-width: 800px;
+    line-height: 1.4;
+    text-align: center;
+    /* left:25%;
+    top:25%; */
+}
+
+/* Notice The Arrangement of media breakPoints the largest the the smaller  */
+@media(max-width:1200px) {
+    .slider .carousel-inner h1{
+        font-size: 45px;
+        max-width: 700px;
+    }
+    
+
+}
+@media(max-width:992px) {
+    .slider .carousel-inner h1{
+        font-size: 30px;
+        max-width: 700px;
+    }
+}
+.slider .carousel-inner h1 span{
+    display: inline-block;
+    background-color: var(--SecondColorRed);
+    color:#fff;
+    padding:2px 10px;
+    margin-left: auto auto;
+}
+.slider .carousel-inner .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .carousel .carousel-item >img{min-height: 300px;}
+.slider .carousel-item {
+    -webkit-background-size:cover;
+    -moz-background-size:cover ;
+    -o-background-size:cover ;
+    -ms-background-size:cover ;
+    background-size:cover ;
+    
+    
+}
+
+.slider .carousel .carousel-inner .carousel-one{
+background-image: url(../Images/ImageSlider/Computer5.jpg);
+background-size:cover ;
+background-repeat: no-repeat;
+}
+.slider .carousel .carousel-inner .carousel-two{
+    background-image: url(../Images/ImageSlider/Computer6.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+.slider .carousel .carousel-inner .carousel-three{
+    background-image: url(../Images/ImageSlider/Computer7.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+
+
+.slider .carousel .carousel-control-next-icon, .slider .carousel .carousel-control-prev-icon {
+    position:absolute;
+    z-index: 5;
+    background-color:rgba(0, 0, 207, 0.5);}
+
+.slider .carousel .carousel-indicators li{
+    height: 8px;;
+    cursor: pointer;
+}
+.slider .carousel-indicators .active{
+    background-color: #fff;
+}
+.slider .carousel .carousel-control-next,.slider .carousel .carousel-control-prev{
+    z-index: 4;
+}
+
+
+
+/* End Div Slider */
+
+/*  Start Features section */
+
+.Features{
+    padding:50px 0;
+}
+.Features i{
+    background-color: var(--SecondColorRed);
+    color:#fff;
+    width:80px;
+    height:80px;
+    line-height:80px;
+    border-radius: 50%;
+}
+.Features h3{
+    color: var(--FirstColorBlue);
+}
+
+.Features p{
+    margin-bottom: 40px;;
+}
+/*  End Features section */
+
+/*  Start OverView section */
+
+.overview{
+    background-color:#caf7e8;
+    padding:100px;
+}
+.overview h3{
+    text-transform: uppercase;
+}
+.overview p{
+    width:70%;
+    font-size:20px;
+    line-height: 2;
+    margin:10px auto;
+    color: #a2a2c9;
+}
+
+@media(max-width:992px){
+    .overview p{
+    width:100%;
+    }
+    .overview h3{
+        font-size:25px;
+        font-weight: bold;
+    }
+
+}
+.overview h4{
+    font-weight: bold;
+    letter-spacing:3px;
+    margin:20px 15px;/* up-down  /  right-left  */
+}
+.overview button{
+    background-color: var(--SecondColorRed);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 40px;
+    border: solid 2px var(--SecondColorRed);
+}
+
+
+
+/*  End OverView section */
+
+
+/* Start Featured Work section*/
+.featured-work{
+    background-color:aliceblue;
+    padding: 100px 0;
+}
+
+.featured-work p{
+    width:70%;
+    font-size:20px;
+    line-height: 2;
+    margin:10px auto;
+    color: #a2a2c9;
+}
+.featured-work h2{
+    font-weight: bold;
+    margin:20px 15px;/* up-down  /  right-left  */
+}
+.featured-work ul{
+    margin-top:40px;
+}
+.featured-work ul li{
+    display:inline-block;
+    margin-right:10px;
+    margin-bottom:10px;
+    padding:5px 30px;
+    border:2px solid var(--FirstColorBlue);
+    color: var(--FirstColorBlue);
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing:2px;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -ms-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+
+}
+.featured-work ul li.active,.featured-work ul li:hover{
+    background-color: var(--SecondColorRed);
+    /* border: none; */
+    border: solid 2px var(--SecondColorRed);
+    color:#fff;
+}
+.featured-work ul li:hover{
+    cursor:pointer;
+}
+.featured-work .Shuffle-images .row{
+    margin-top:50px;
+    
+}
+.featured-work .Shuffle-images .row{
+    margin:0;
+    
+}
+
+.featured-work .Shuffle-images .row .col-sm{
+    padding:0;
+}
+.featured-work .Shuffle-images .row img{
+    width:100%;
+}
+/* End Featured Work section*/
+
+
+/*  Start Leatest Post Section */
+
+.latest-post {
+    padding: 100px 0;
+}
+ 
+.latest-post .row .card .card-text{
+    width:100%;
+    font-size:20px;
+    line-height: 1.5;
+    margin-left:0px;
+    margin-bottom: 40px;
+    color: #a2a2c9;
+}
+.latest-post h2{
+    font-weight: bold;
+    margin:20px 15px;/* up-down  /  right-left  */
+}
+.latest-post .row .card {margin-bottom:20px;text-align:left}
+
+
+.latest-post .row .card .card-title{
+    color: var(--FirstColorBlue);
+
+}
+.latest-post .row .card .card-text{margin-bottom: 10px !important;}
+.latest-post .row .card .card-link{
+    color: var(--SecondColorRed);
+    font-weight: bold;
+}
+
+/*  End Leatest Post Section */
+
+/*  Start testimonials Post Section */
+.testimonials{
+    background:url("../Images/ImageSlider/Computer5.jpg");
+    padding:40px 0;
+    -webkit-background-size:cover;
+    -moz-background-size:cover ;
+    -o-background-size:cover ;
+    -ms-background-size:cover ;
+    background-size:cover ;
+    /* if you remove (position:relative) the (overlay)not work */
+    position:relative;
+}
+.testimonials .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+/*  To Show the arrows .  */
+/* .testimonials .carousel .carousel-control-prev-icon, .testimonials .carousel .carousel-control-next-icon {
+    position:absolute;
+    z-index: 1;
+    background-color:#bd0d0d;} */
+    /*  To Show the box of arrow  arrows to hover on it .   */
+/* .testimonials .carousel .carousel-control-next,.testimonials .carousel .carousel-control-prev{
+    z-index: 2;
+}     */
+
+/* .testimonials .carousel-control-next-icon,.testimonials .carousel-control-prev-icon{
+    width: 60px;
+    height: 60px;
+    background-color:var(--SecondColorRed);
+} */
+/* .testimonials .carousel-control-next-icon{
+    position: absolute;
+    top:50%;
+    right:35%;
+    width: 60px;
+    height: 60px;
+    background-color:var(--SecondColorRed);
+}
+.testimonials .carousel-control-prev-icon{
+    position: absolute;
+    top:50%;
+    left:35%;
+    width: 60px;
+    height: 60px;
+    background-color:var(--SecondColorRed);
+
+} */
+.testimonials span.activeArrow{
+    width:80px;
+    height:80px;
+    background-color:var(--SecondColorRed);
+    
+}
+.testimonials span.nonactiveArrow{
+    width:80px;
+    height:80px;
+    background-color:#000;
+    
+}
+
+@media (max-width:1200px) {
+    .testimonials .carousel span {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+/* .testimonials .carousel .sr-only{
+    color:#fff;
+} */
+/*  the best way to add to container z-index:3 */
+/* all items inside the container go a head or up */
+.testimonials .c {
+    /* position:relative is important to work z-index */
+    position:relative;
+    z-index: 3;
+}
+/* .testimonials{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .testimonials .carousel-item{
+    margin-bottom:20px;
+} */
+.testimonials .carousel-caption{
+    top:50%;
+    margin-top:-200px;
+}
+.testimonials .carousel-inner .carousel-item .carousel-caption  img{
+    margin-top:40px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.testimonials .carousel-inner .carousel-item .carousel-caption h3{
+    margin-bottom: 5px;
+}
+/* plus(+) that mean the next item after h3 is ...... */
+.testimonials .carousel-inner .carousel-item .carousel-caption h3 + span{
+    display:inline-block;
+    margin-bottom: 20px;
+    font-size:18px;
+}
+
+.testimonials .carousel .carousel-indicators li{
+    height: 8px;;
+    cursor: pointer;
+}
+
+
+
+/*  End testimonials Post Section */
+
+
+/* Start Pricing Table Section */
+
+
+.pricing-table {
+    padding: 100px 0;
+
+}
+
+@media (max-width:1200px) {
+    .pricing-table {
+        padding: 10px 0;
+    }
+
+}
+ 
+.pricing-table .Card-Description{
+    margin-bottom:40px;
+    line-height:1.4;
+    font-size:20px;
+    width:80%;
+    margin:0 auto 75px;
+}
+
+@media (max-width:1200px) {
+    .pricing-table .Card-Description {
+        margin:0 auto 30px;
+    }
+}
+.pricing-table .row .card .card-text{
+    width:100%;
+    font-size:20px;
+    line-height: 1.5;
+    margin-left:0px;
+    margin-bottom: 40px;
+    color: #a2a2c9;
+}
+.pricing-table h2{
+    font-weight: bold;
+    margin:20px 15px;/* up-down  /  right-left  */
+}
+.pricing-table .row .card {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+.pricing-table .row .card .card-title{
+    margin-top: 20px;
+    color: var(--FirstColorBlue);
+
+
+}
+.pricing-table .row .card .card-body{
+    /* box-shadow: 2px 3px 1px 2px #ddd inset; */
+    padding:0;
+}
+.pricing-table .row .card .card-text{
+    padding:10px;
+    margin-top:10px;
+    margin-bottom: 2px !important;
+    color:var(--FirstColorBlue);
+    font-size:25px;
+    font-weight:bold;
+    /* background-color:var(--SecondColorRed) */
+}
+.pricing-table .row .card .card-text span{
+    text-transform:UpperCase;
+    font-size:12px;
+}
+
+.pricing-table .row .card .list-group{
+margin-top:0px;
+}
+.pricing-table .row .card .list-group-item{
+    margin-top:2px;
+    margin-bottom:0px;
+    border:none;
+}
+.pricing-table .row .card .card-link{
+    /* 
+    display : block {fill the screen }
+    display : inline-block {fill the content inside it just }
+   */
+    display:inline-block;
+    padding:8px 15px;
+    font-size:17px;
+    margin-top:5px;
+    margin-bottom:20px;
+    color: var(--SecondColorRed);
+    font-weight: bold;
+    background-color: var(--SecondColorRed);
+    color:#fff;
+    text-transform:UpperCase;
+}
+.pricing-table .row .card.second {
+   position:relative;
+   top:-20px;
+}
+.pricing-table .row .card.second .card-text{
+    background-color: var(--SecondColorRed);
+    color:#fff;
+
+}
+.pricing-table .row .card.second .card-link{
+    background-color: var(--FirstColorBlue);
+    color:#fff;
+
+}
+/* End Pricing Table Section */
+
+
+/*  Start choose us section */
+
+
+
+.choose-us img{
+    width:100%;
+}
+/* Thanks for Zero  */
+.choose-us .info{
+    padding: 0px;
+}
+
+.choose-us .info:last-child{
+    background-color:var(--FirstColorBlue);
+    color:#fff;
+
+}
+
+.choose-us h2{
+    margin:40px 40px;
+}
+
+.choose-us p{
+    margin:5px 40px;
+    line-height:2;
+}
+.choose-us a{
+    display:inline-block;
+    /* margin: (top-bottom) (right-left) */
+    margin:70px 40px 0 40px;
+    background-color:var(--SecondColorRed);
+    color:#fff;
+    padding:10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* the above style is execelent untile 1500px and less than it is rubish  */
+
+/*  End choose us section */
+
+
+/*  Start statistics Section  */
+.statistics{
+    padding:100px 0;
+    color:var(--FirstColorBlue);
+}
+.statistics .state-box{
+    margin-bottom:30px;
+}
+.statistics .number{
+    /* span get the full width of his parent , then move to down */
+    display:block;
+    font-size:20px;
+    font-weight:bold;
+}
+.statistics p{
+    font-size:18px;
+    color:var(--SecondColorRed);
+    margin-bottom:0px;
+}
+
+/*  End statistics Section  */
+
+
+
+
+/* <!-- Start ContactUs Section--> */
+
+.contact-us{
+    padding:100px 0;
+    background-color:var(--SecondColorRed);
+    color:#fff;
+}
+
+
+.contact-us p{
+    font-size:20px;
+}
+.contact-us a{
+    display: inline-block;
+    color:#fff;
+    border: #fff solid 2px;
+    font-size:18px;
+    padding:7px 30px;
+    font-weight:bold;
+    text-decoration:none;
+
+}
+/* <!-- End ContactUs Section--> */
+
+/* <!-- Start Footer Section--> */
+.footer{
+    padding:100px 0;
+}
+.footer .web-info > h2 span{
+    font-size:30px;
+
+}
+.footer .web-info > h2 {
+    font-size:30px;
+    margin-bottom: 40px;
+}
+.footer .web-info span:first-of-type{
+    font-weight: bold;
+    color: var(--FirstColorBlue);
+}
+.footer .web-info span:last-of-type{
+    color: var(--SecondColorRed);
+}
+.footer .web-info h2{
+    
+}
+.footer .web-info p{
+    line-height: 1.6;
+    font-size: 20px;
+    
+}
+.footer .web-info a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+.footer .web-info a::before{
+   font-family: 'FontAwesome';
+   /* in contet the uini code of arrow "fa-chevron-circle-right " icon  */
+   content: "\f138";
+   display:inline-block;
+   margin-right: 5px;
+}
+
+.footer .help-links h2,
+.footer .contact-footer h2{
+    margin-bottom: 40px;
+    color:var(--FirstColorBlue);
+}
+.footer .help-links ul li::before{
+    font-family: 'FontAwesome';
+    /* in contet the uini code of arrow "fa-chevron-right" icon  */
+    content: "\f054";
+    display:inline-block;
+    margin-right:2px;
+    color:var(--FirstColorBlue);
+    font-size:12px;
+    /* if you want change the place of icon use position relative then use sides top ,bottom , left or right   */
+    position:relative;
+}
+
+.footer .contact-footer ul li{
+    margin-bottom: 24px;
+}
+@media (max-width:992px) {
+    .footer .help-links h2,
+    .footer .contact-footer h2{
+          margin-bottom:20px;
+    }
+    
+}
+@media (max-width:768px) {
+    .footer .Foot_Three, .footer .Foot_Two{
+          margin-top:20px;
+    }
+    
+}
+
+/* <!-- End Footer Section--> */
+
+/* <!-- Start CopyRight Section--> */
+.copyright {
+    padding: 15px 0 10px 0;
+    border-top: 2px #eee solid;
+}
+.copyright ul{
+    margin: 0;
+}
+.copyright ul li {
+    display: inline-block;
+}
+.copyright ul li a {
+    display: inline-block;
+    color:var(--FirstColorBlue);
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+
+
+/* <!-- End CopyRight Section--> */
+
+/* Media Style  */
+/* from 1291px to 1500px */
+@media (min-width:1291px) and (max-width:1500px){
+    .choose-us p{
+        margin:5px 40px;
+        line-height:1.5;
+    }
+    .choose-us a{
+        display:inline-block;
+        /* margin: (top-bottom) (right-left) */
+        margin:10px 40px 10px 40px;
+        background-color:var(--SecondColorRed);
+        color:#fff;
+        padding:10px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size:20px;
+        font-weight:bold;
+    }
+}
+
+@media (max-width:1290px) {
+    .choose-us .info:last-child{
+       /* clear:left; */
+       background-color: #ec1c23;
+       float:inline-start;
+   }
+   .choose-us h2{
+    margin:10px 20px 10px 40px;
+}
+
+.choose-us p{
+    margin:5px 40px;
+    line-height:1.5;
+}
+.choose-us a{
+    display:inline-block;
+    /* margin: top right bottom left  */
+    margin:40px 20px 20px 40px;
+    background-color:var(--FirstColorBlue);
+    color:#fff;
+    padding:10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:20px;
+    font-weight:bold;
+}
+}
+
+/* @media (max-width:1460px) */
+@media (max-width:991px) {
+    .pricing-table .row .card.second {
+        position:relative;
+        top:0px;
+     }
+    
+}
+
